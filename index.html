@@ -11,33 +11,35 @@
   <body>
     <div class="container">
       <div class="left-column">
-        <img src="images/PhotoRoom-20240206_163217.png" alt="" />
+        <img id="face-img" src="assets/PhotoRoom-20240206_163217.png" alt="" />
         <h1>Hi, I'm <span>Omy Gonzalez</span></h1>
-        <h2>Software Engineer.</h2>
-        <p>
-          I'm the Front-End Developer for #Company in Bangladesh, OR. I have
-          serious passion for UI effects, animations and creating intuitive,
-          dynamic user experiences.
-        </p>
+        <h2>Software Engineering Student.</h2>
+        <p></p>
         <div class="btns">
           <button id="resume__btn">
-            Resume <img id="download" src="images/arrow.png" alt="" />
+            <a id="download-resume" href="/assets/resume.pdf" download>
+              Resume <span class="arrow">⬇</span>
+            </a>
           </button>
-          <button id="contact__btn">Contact Me</button>
+          <button id="contact__btn">
+            <a href="mailto:omymael1@hotmail.com">Contact Me</a>
+          </button>
         </div>
+        <!-- <img
+          id="gif"
+          src="assets/Coding Software Engineer GIF by CodeRower.gif"
+          alt=""
+        /> -->
       </div>
       <div class="right-column">
         <section class="about-me">
           <h1>About Me</h1>
           <hr />
           <p>
-            Hi I am a Front-End developer & I can build your website as you
-            want. I can customize plugin & wordpress theme. And I have two years
-            of experience in figma. Now I am able to design your portfolio.
+            Hi, my name is Omy Gonzalez, I'm currently pursuing a software
+            engineering degree at Western Governors University. In my free time
+            I love to game, go to the gym, and code.
             <br />
-            <br />
-            I have three years of experience with HTML, CSS, JavaScript. And I
-            can Design Your web application.
           </p>
         </section>
         <section class="skills">
@@ -45,47 +47,75 @@
           <hr />
           <p>Programming Languages</p>
           <div class="programming">
-            <div><img class="img" src="images/js_5968292.png" alt="" /></div>
+            <div><img class="img" src="assets/js_5968292.png" alt="" /></div>
             <div>
-              <img class="img" src="images/python_5968350.png" alt="" />
+              <img class="img" src="assets/python_5968350.png" alt="" />
             </div>
             <div>
-              <img class="img" src="images/icons8-java-48.png" alt="" />
+              <img class="img" src="assets/icons8-java-48.png" alt="" />
             </div>
             <div>
-              <img class="img" src="images/typescript_5968381.png" alt="" />
+              <img class="img" src="assets/typescript_5968381.png" alt="" />
             </div>
             <div>
-              <img class="img" src="images/html-5_5968267.png" alt="" />
+              <img class="img" src="assets/html-5_5968267.png" alt="" />
             </div>
-            <div><img class="img" src="images/css-3_732190.png" alt="" /></div>
+            <div><img class="img" src="assets/css-3_732190.png" alt="" /></div>
+          </div>
+          <p>Frameworks</p>
+          <div class="tools">
+            <div><img src="assets/react.png" alt="" /></div>
+            <div>
+              <img src="assets/angular.png" alt="" />
+            </div>
+            <div><img src="assets/icons8-spring-boot-48.png" alt="" /></div>
           </div>
           <p>Tools</p>
           <div class="tools">
-            <div><img src="images/icons8-git-48.png" alt="" /></div>
+            <div><img src="assets/icons8-git-48.png" alt="" /></div>
             <div>
               <img
                 class="vscode"
-                src="images/Visual_Studio_Code_1.35_icon.svg.png"
+                src="assets/Visual_Studio_Code_1.35_icon.svg.png"
                 alt=""
               />
             </div>
-            <div><img src="images/icons8-supabase-48.png" alt="" /></div>
-            <div><img src="images/icons8-vite-48.png" alt="" /></div>
+            <div>
+              <img src="assets/icons8-intellij-idea-48.png" alt="" />
+            </div>
+            <div><img src="assets/icons8-supabase-48.png" alt="" /></div>
+            <div><img src="assets/icons8-vite-48.png" alt="" /></div>
+            <div>
+              <img width="70px" src="assets/logo-mysql-170x115.png" alt="" />
+            </div>
           </div>
+        </section>
+        <section class="about-me">
+          <h1>Projects</h1>
+          <hr />
+          <p>
+            Coming soon...
+            <br />
+          </p>
         </section>
         <section class="contact__me">
           <h1>Contact</h1>
           <hr />
-          <form class="contact__form">
+          <form
+            action="mailto:omymael1@hotmail.com"
+            method="POST"
+            enctype="text/plain"
+            class="contact__form"
+          >
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
             <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit" class="button">Send Message</button>
           </form>
-          <button class="button">Send Message</button>
         </section>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
